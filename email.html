@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <style>
+		@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+		p {
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+	</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="contact form example">
+  <title>고객 문의</title>
+</head>
+
+<body>
+  <a class="logo" href="javascript:history.back();"><img src="images/back.png" alt=""></a>
+  <h2 class="content-head is-center"><b>
+      <p style="font-size: 200%;">
+        고객문의</p>
+    </b></h2>
+  <aside>
+    <p>
+      Campering+의 E-Mail 문의센터 입니다.</p>
+    <p>원하시는 <b>문의 내용</b>을 적어주시면 감사합니다.
+    </p>
+  </aside>
+
+  <!-- START HERE -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/email_style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="chltmdcks3@kakao.com"
+    action="https://script.google.com/macros/s/AKfycbwAPDpLk4Z4LwGkWkKobwWuhdgBPK19P0zNqs0VVZ2n7cy36wk/exec">
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name"><b>Name (성함)</b> </label>
+        <input id="name" name="name" placeholder="성함" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message"><b>Message (문의내용)</b> </label>
+        <textarea id="message" name="message" rows="10" placeholder="문의내용을 입력해주세요."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><b>Email Address (주소입력):</b></label>
+        <input id="email" name="email" type="email" value="" required placeholder=" your.eamil@email.com" />
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty
+          to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+    <div class="thankyou_message" style="display:none;">
+      <h2>감사합니다. 이메일이 발송 처리되었습니다. 빠른 시일 내 답장 드리겠습니다.</h2>
+    </div>
+
+  </form>
+
+  <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+    </script>
+
+</body>
+
+</html>

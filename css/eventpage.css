@@ -1,0 +1,50 @@
+a {
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+    max-height: 999999px;
+}
+
+ul{
+    display: block;
+}
+
+.eventList li a img {
+    display: block;
+    width: 300px;
+    height: 210px;
+}
+
+span {
+    /* text-align: center; */
+    vertical-align: middle;
+}
+
+.eventList li {
+    position: relative;
+    float: left;
+    margin: 20px 50px 0 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.eventList .name {
+    padding: 22px 25px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+}
+
+.eventList .name, .date{
+    display: block;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.eventList .date {
+    padding: 8px 25px 22px;
+    font-size: 13px;
+    color: #222;
+}
